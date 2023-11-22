@@ -21,8 +21,8 @@ class FilamentAutocompleteServiceProvider extends PackageServiceProvider
     public function packageRegistered(): void
     {
         FilamentAsset::register([
-            Css::make('filament-autocomplete', __DIR__ . '/../dist/css/filament-autocomplete.css')->loadedOnRequest(),
-            AlpineComponent::make('filament-autocomplete', __DIR__ . '/../dist/js/filament-autocomplete.js'),
+            Css::make('filament-autocomplete', __DIR__ . '/../resources/dist/css/filament-autocomplete.css')->loadedOnRequest(),
+            AlpineComponent::make('filament-autocomplete', __DIR__ . '/../resources/dist/js/filament-autocomplete.js'),
         ], package: 'artmin96/filament-autocomplete');
     }
 }
